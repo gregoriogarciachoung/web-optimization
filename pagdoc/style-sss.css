@@ -1,0 +1,35 @@
+.sss>div
+{display:flex; flex-wrap: wrap; justify-content:center;}
+
+.sss{
+		padding:3em 0;
+	}
+.sss article{
+		width:200px;
+		text-align:center;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		align-content:space-between;
+		margin-top:3em;
+	}
+
+@media all and (min-width:420px){
+	.sss{
+		margin:0 auto;
+		padding:3em 3em;
+		width:calc(90% - 6em);
+	}
+	
+	.sss>div{
+		display:flex; 
+		justify-content:space-around;
+	}
+	.box-shadow{box-shadow :1px 1px 15px 3px #ccc;} 
+}
+
+@media all and (min-width:900px){
+	.sss{
+		width:calc(72% - 6em);
+	}
+}

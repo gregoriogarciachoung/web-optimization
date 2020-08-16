@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="s-tyle.css">
+    <link rel="stylesheet" href="nav.css">
+	<link rel="stylesheet" href="style-sss.css">
+	<link rel="stylesheet" href="style-zzz.css">
+    <title>Document</title>
+	<script>
+		window.addEventListener("load",inicio,false);
+		var ver = true;
+		function inicio(){
+			menu = document.querySelector("#menu")
+			menu.addEventListener("click",verMenu,false);
+		}
+		function verMenu(){
+			var element = document.querySelector("nav");
+			element.classList.toggle("ocultar");
+			
+			
+			if(ver){
+				menu.innerHTML="CERRAR";
+				ver = false;
+			}
+			else{
+				menu.innerHTML="MENU";
+				ver = true;
+			}
+			
+			
+		}
+	</script>
+</head>
+	<body>
+		<nav>
+			<div class="nav">
+				<a>LOGO</a>
+				<a id="menu">MENU</a>
+			</div>
+			<ul>
+				<li>Why Docker?</li>
+				<li>Products</li>
+				<li>Use Cases</li>
+				<li>Developers</li>
+				<li>Pricing</li>
+				<li>Companay</li>
+			</ul>
+			<ul>
+				<li><a>Sign In</a></li>
+				<li><a class="btn1">Get Started</a></li>
+			</ul>		
+		</nav>
+		<header>
+			<section>
+				<h1>Get Started with Docker</h1>
+				<p>We Help developers and development build and we Help developers and development build and</p>
+				<a class="btn1">Get Started</a>
+			</section>
+			<figure>
+				<img class="imgm" src="img1.jpg">
+			</figure>
+		</header>
+		<main>
+			<section class="sss box-shadow">
+				<h1 class="text-center">Docker Partnership</h1>
+				<h4 class="plomo">Integrating the Docker experience you already know and love.</h4>
+				<div>
+				<article>
+					<span>
+					<h1>Microsof Azure</h1>
+					<p class="plomo ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid eos natus fugiat ad quas exercitationem, optio suscipit molestias</p>
+					<p class="plomo ">Lorem ipsum dolor sit amet consectetur, </p>
+					</span>
+					<a class="btn1">Read and Blog</a>
+				</article>
+				<article>
+					<span>
+					<h1>snyk</h1>
+					<p class=" plomo">Aliquid eos natus fugiat ad quas exercitationem, optio suscipit molestias</p>
+					</span>
+					<a href="#" class="btn1">Read and Blog</a>
+				</article>
+				</div>
+			</section>
+			<section class="zzz">
+				<article>
+					<figure>
+						<img src="cli.png">
+					</figure>
+					<div>
+						<span><h1>Docker Hub</h1>
+						<h5>Integrating the Docker experience you already know and love.</h5>
+						<p class="plomo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid eos natus fugiat ad quas exercitationem, optio suscipit molestias</p>
+						</span><a class="btn1">Read and Blog</a>
+					</div>
+				</article>
+				<article>
+					<figure>
+						<img src="vol.png">
+					</figure>
+					<div>
+						<span><h1>Docker Hub</h1>
+						<h5>Integrating the Docker experience you already know and love.</h5>
+						<p class="plomo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid eos natus fugiat ad quas exercitationem, optio suscipit molestias</p>
+						</span><a class="btn1">Read and Blog</a>
+					</div>
+				</article>
+				<article>
+					<figure>
+						<img src="fra.png">
+					</figure>
+					<div>
+						<span><h1>Docker Hub</h1>
+						<h5>Integrating the Docker experience you already know and love.</h5>
+						<p class="plomo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid eos natus fugiat ad quas exercitationem, optio suscipit molestias</p>
+						<p class="plomo">Lorem ipsum dolor sit amet </p>
+						</span><a class="btn1">Read and Blog</a>
+					</div>
+				</article>
+			</section>
+			<section class="text-center">
+				<hgroup class="titulo1">
+					<h1>Get sarted with</h1>
+					<h1>Docker today</h1>
+				</hgroup>
+				<a class="btn1">Get Started</a>
+			</section>
+		</main>
+		<footer>
+			<section>
+				
+					<div>
+					<hgroup>
+							<h1>Taste</h1>
+							<h6>Restaurant</h6>
+						</hgroup>
+					</div>
+					
+					<div>
+						<h1>Our Services</h1>
+						<ul>
+							<li>Center</li>
+							<li>Space</li>
+							<li>Contact</li>
+							<li>Home</li>
+						</ul>
+					</div>
+					<div>
+						<h1>Our Company</h1>
+						<ul>
+							<li>Center</li>
+							<li>Space</li>
+							<li>Contact</li>
+							<li>Blog</li>
+							<li>Home</li>
+						</ul>
+					</div>
+					<div>
+						<h1>Address</h1>
+						<li>Crepusculo</li>
+						<li>A33 F4</li>
+					</div>
+				
+			</section>
+		</footer>
+	</body>
+</html>

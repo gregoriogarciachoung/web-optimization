@@ -1,0 +1,40 @@
+.zzz article>div{
+	display:flex;
+	flex-wrap:wrap;
+	align-content:space-evenly;
+}
+
+.zzz>article+article{margin-top:6em;}
+.zzz figure>img{width:100%;}
+
+@media all and (min-width:320px){
+	
+	.zzz figure>img{width:300px;}	
+}
+@media all and (min-width:640px){
+	.zzz>article{
+		display:flex;
+		justify-content:space-between;
+	}
+	.zzz figure{
+		width:45%;
+	}
+	.zzz article>div{
+		width:50%;
+	}
+	.zzz>article:nth-child(even){
+		flex-direction: row-reverse;
+	}
+	
+	.zzz figure>img{width:100%;}
+}
+@media all and (min-width:720px){
+	.zzz>article{width:82%}
+	.zzz>article:nth-child(odd){
+		
+	}
+	.zzz>article:nth-child(even){
+		margin-left:calc(100% - 82%);
+	}
+	.zzz figure>img{width:100%;}
+}

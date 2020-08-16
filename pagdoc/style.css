@@ -1,0 +1,135 @@
+*{margin:0; padding:0}
+body{
+		max-width:1024px;
+		margin: 0 auto;
+		width:96%;
+	}
+header, main, footer,nav,
+section,
+hgroup,article{
+width:100%;
+}
+body>header{
+height:100vh;
+margin-top:3em;
+}
+hgroup,h1,h2,h3,h4,h5,h6{margin-bottom:1em;width:100%}
+hgroup>h1,
+hgroup>h2,
+hgroup>h3,
+hgroup>h4,
+hgroup>h5,
+hgroup>h6
+{margin:0;}
+/**/
+ul{padding:0}
+li{
+list-style:none;
+}
+a{
+text-decoration:none;
+}
+
+
+img{
+	width:100%;
+	}
+figure{display:flex; flex-flow:wrap;justify-content:center}
+figcaption{
+padding:0 1em 0 1em;
+text-align:justify;
+}
+
+main,footer,main>section+section{margin-top:6em;}
+nav ul{margin:1em 0 1em;}
+nav{display:flex; flex-direction:column;}
+/*decoracion*/
+
+
+.sss>div
+{display:flex; flex-wrap: wrap; justify-content:center;}
+
+.sss{
+		padding:3em 0;
+	}
+.sss article{
+		width:200px;
+		text-align:center;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		align-content:space-between;
+		margin-top:3em;
+	}
+.zzz article>div{
+	display:flex;
+	flex-wrap:wrap;
+	align-content:space-evenly;
+}
+
+.zzz>article{margin-top:6em;}
+
+
+p{margin-bottom:1em;width:100%}
+
+.zzz figure>img{width:100%; margin-bottom:3em;}
+
+html{font:menu; font-size:15px;line-height:1.5em;}
+
+.titulo1{font-size:1em; line-height:2em;color:#00143c}
+.text-center{text-align:center;}
+
+.btn1{color:#fff; background:#008bff;font-weight:bold; border-radius: 3px;padding:0.5em 1.5em;font-size:12px;}
+.plomo{color:#969696}
+
+@media all and (min-width:420px){
+	.sss{
+		margin:0 auto;
+		padding:3em 3em 6em;
+		width:calc(90% - 6em);
+	}
+	
+	.sss>div{
+		display:flex; 
+		justify-content:space-around;
+	}
+	.zzz figure>img{width:300px;}
+	.box-shadow{box-shadow :1px 1px 15px 3px #ccc;} 
+	
+	.titulo1{font-size:2em;}
+}
+
+@media all and (min-width:900px){
+	nav{display:flex;  flex-direction:row; justify-content:space-around;padding:1em;width:calc(100% - 2em);}
+	nav ul{display:flex; margin:0}
+	nav li{margin:0 1em 0 1em;}
+	header>section{margin-left:3em;width:calc(100% - 3em);}
+	.sss{
+		width:calc(72% - 6em);
+	}
+	.zzz>article{
+		width:80%;
+		display:flex;
+		justify-content:space-between;
+	}
+	.zzz figure{
+		width:45%;
+	}
+	.zzz article>div{
+		width:50%;
+	}
+	
+	.zzz>article:nth-child(odd){
+		margin-left:3em;
+	}
+	.zzz>article:nth-child(even){
+		margin-left:calc(100% - 80% - 3em);
+		flex-direction: row-reverse;
+	}
+	.zzz figure>img{width:100%;margin:0}
+	
+	footer>section{display:flex; justify-content:space-between;}
+	footer{text-align:left;}
+	footer{padding:3em 6em; width:calc(100% - 12em)}
+
+}
