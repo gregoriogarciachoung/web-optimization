@@ -5,7 +5,8 @@
 }
 
 .zzz>article+article{margin-top:6em;}
-.zzz figure>img{width:100%;}
+
+	.zzz figure>img{max-height:340px;}	
 
 @media all and (min-width:320px){
 	
